@@ -1,5 +1,5 @@
 FROM openjdk
-ARG JAR_FILE=target/CoreServer-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} AutoDriveNetworkServer.jar
+ARG JAR_FILE=target/mapTileServer-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} AutoDriveMapTileServer.jar
 COPY util/application.properties application.properties
-ENTRYPOINT ["java","-jar","/AutoDriveNetworkServer.jar"]
+ENTRYPOINT ["java","-jar","/AutoDriveMapTileServer.jar"]
